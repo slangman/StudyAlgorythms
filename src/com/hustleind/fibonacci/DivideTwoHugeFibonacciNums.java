@@ -1,4 +1,4 @@
-package com.hustleind;
+package com.hustleind.fibonacci;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +9,7 @@ public class DivideTwoHugeFibonacciNums {
         Scanner myInput = new Scanner(System.in);
         long a = myInput.nextLong();
         long b = myInput.nextLong();
-        System.out.println(count(a,b));
+        System.out.println(count(a, b));
     }
 
     public static int count(long a, long b) {

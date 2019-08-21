@@ -1,4 +1,4 @@
-package com.hustleind;
+package com.hustleind.fibonacci;
 
 import java.util.Scanner;
 
@@ -14,7 +14,7 @@ public class FibonacciLastDigit {
         int second = 1;
         int third = 1;
         for (int i = 2; i <= n; i++) {
-            third = (first+second)%10;
+            third = (first + second) % 10;
             first = second;
             second = third;
         }

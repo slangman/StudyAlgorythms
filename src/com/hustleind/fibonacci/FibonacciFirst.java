@@ -1,4 +1,4 @@
-package com.hustleind;
+package com.hustleind.fibonacci;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class FibonacciFirst {
     }
 
     public static long count(int n) {
-        long[] resultArray = new long[n+1];
+        long[] resultArray = new long[n + 1];
         resultArray[0] = 0;
         resultArray[1] = 1;
         for (int i = 2; i <= n; i++) {
