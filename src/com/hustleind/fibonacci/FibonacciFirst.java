@@ -2,11 +2,23 @@ package com.hustleind.fibonacci;
 
 import java.util.Scanner;
 
+/**
+ * Алгоритм нахождения числа Фибоначчи
+ */
+
 public class FibonacciFirst {
     public static void main(String[] args) {
-        Scanner myInput = new Scanner(System.in);
+        //для ручного ввода
+        /*Scanner myInput = new Scanner(System.in);
         int a = myInput.nextInt();
-        System.out.println(count(a));
+        System.out.println(count(a));*/
+        for (int a=1; a < 1000; a++) {
+            long startTime = System.currentTimeMillis();
+            System.out.println(count(a));
+            long endTime = System.currentTimeMillis();
+            System.out.println(endTime-startTime + " ms");
+            //время выполнения практически не меняется
+        }
     }
 
     public static long count(int n) {

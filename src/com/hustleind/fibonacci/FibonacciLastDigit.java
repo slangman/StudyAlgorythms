@@ -2,6 +2,10 @@ package com.hustleind.fibonacci;
 
 import java.util.Scanner;
 
+/**
+ * Алгоритм нахождения последней цифры числа Фибоначчи
+ */
+
 public class FibonacciLastDigit {
     public static void main(String[] args) {
         Scanner myInput = new Scanner(System.in);
