@@ -1,12 +1,11 @@
 package com.hustleind.trash;
 
-/**
- * Ищет в переданном массиве строки, начинающиеся с "null" и возвращает индексы элементов
- */
+import java.util.ArrayList;
+import java.util.List;
 
-public class GetIndexOfNullElement {
+public class RemoveNullFieldsFromArray {
     public static void main(String[] args) {
-        String[] OSA = new String[]{"EXTERNAL_ID",
+        String[] array = new String[]{"EXTERNAL_ID",
                 "TRANS_ID_1",
                 "TRANS_ID_2",
                 "DATE_TIME",
@@ -79,15 +78,16 @@ public class GetIndexOfNullElement {
                 "ORIG_TARIFF_PLAN_ID",
                 "USAGE_OFFER_ID "
         };
-
-        StringBuilder sb = new StringBuilder("");
-        for (int i = 0; i < OSA.length; i++) {
-            if (OSA[i].length() >= 4  && OSA[i].substring(0,4).equalsIgnoreCase("null")) {
-                sb.append(i).append(", ");
+        List<String> list = new ArrayList<>();
+        for (String s : array) {
+            if (s.length()<4 || !s.substring(0,4).equalsIgnoreCase("null")) {
+                list.add(s);
             }
         }
-        if (sb.length()!=0) {
-            System.out.println(sb.subSequence(0, sb.length() - 2).toString());
+        String[] result = new String[list.size()];
+        result = list.toArray(result);
+        for (String s : result) {
+            System.out.print("\"" + s + "\"" + ", ");
         }
     }
 }
