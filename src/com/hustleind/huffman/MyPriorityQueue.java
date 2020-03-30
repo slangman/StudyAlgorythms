@@ -2,11 +2,11 @@ package com.hustleind.huffman;
 
 import java.util.ArrayList;
 
-public class PriorityQueue {
+public class MyPriorityQueue {
     private ArrayList<BinaryTree> data;//список очереди
     private int nElems;//кол-во элементов в очереди
 
-    public PriorityQueue() {
+    public MyPriorityQueue() {
         data = new ArrayList<BinaryTree>();
         nElems = 0;
     }

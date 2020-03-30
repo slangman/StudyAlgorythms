@@ -16,7 +16,7 @@ public class HuffmanTree {
     }
 
     private BinaryTree getHuffmanTree() {
-        PriorityQueue pq = new PriorityQueue();
+        MyPriorityQueue pq = new MyPriorityQueue();
         //алгоритм описан выше
         for (int i = 0; i < ENCODING_TABLE_SIZE; i++) {
             if (freqArray[i] != 0) {//если символ существует в строке
