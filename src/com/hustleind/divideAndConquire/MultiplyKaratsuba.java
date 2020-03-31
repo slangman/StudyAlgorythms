@@ -21,7 +21,7 @@ public class MultiplyKaratsuba {
         BigInteger a = x.subtract(b.shiftLeft(n));
         BigInteger d = y.shiftRight(n);
         BigInteger c = y.subtract(d.shiftLeft(n));
-
+ 
         BigInteger ac = karatsuba(a, c);
         BigInteger bd = karatsuba(b, d);
         BigInteger abcd = karatsuba(a.add(b), c.add(d));
